@@ -70,7 +70,8 @@ html {
 }
 
 body {
-    width: 1024px;
+    width: 100%;
+    max-width: 1024px;
     margin: 0 auto;
     display:flex;
     justify-content: center;
@@ -88,35 +89,41 @@ main {
 
 header {
     width: 100%;
+    max-width: 1024px;
     margin-top: 27px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: dodgerblue;
     position: fixed;
     top: 0;
     z-index: 999;
-    width: 1024px;
 }
 
 .logo {
-    vertical-align: middle;
+    margin-right: 7.0%;
+    margin-left: 5.1%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-left: 4.0%;
+    padding-right: 1.0%;
 }
 
 nav a {
     text-decoration: none;
     color: white;
-    margin: 0 32px;
     font-size: 1.45rem;
 }
 
 nav a:hover {
-    color: black;
-    background-color: yellow;
+    color: darkred;
+    background-color: black;
     font-weight: bold;
-}
-
-nav a:last-of-type {
-    margin-right: 15px;
-    margin-left: 55px;
+    font-size: 2.0rem;
 }
 
 .Top {
@@ -144,8 +151,9 @@ h1 {
 
 .button {
     border: 1px solid black;
-    width: 170px;
-    font-size: 1.9rem;
+    max-width: 170px;
+    width: 38%;
+    font-size: 1.7rem;
     padding: 5px 10px;
     margin-left: 30.5%;
     margin-top: 10px;
@@ -184,8 +192,12 @@ h1 {
     text-align: left;
     margin-top: 10px;
     margin-bottom: 30px;
+    padding-right: 1.5%;
 }
 
+.middle-img {
+    width: 100%;
+}
 h3 {
     font-size: 1.7rem;
     font-weight: 500;
@@ -227,4 +239,57 @@ footer {
 footer p {
     text-align: center;
     font-size: 1.6rem;
+}
+
+@media (max-width: 800px) {
+    header {
+        flex-direction: column-reverse;
+        background-color: white;
+    }
+
+    nav {
+        padding-left: 0%;
+        padding-right: 0%;
+        background-color: dodgerblue;
+        height: 40px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+        align-items: center;
+    }
+
+    .Top img {
+        display: none;
+    }
+
+    .Top {
+        justify-content: center;
+        margin-top: 110px;
+    }
+
+    .button {
+        width: 50%;
+        margin-left: 25.5%;
+
+    }
+
+    .content {
+        width: 99%;
+    }
+
+    .TopMid {
+        padding-left: 1.5%;
+    }
+
+    .BottomMid {
+        padding-left: 1.4%;
+        padding-right: 3.8%;
+    }
+
+    .Contact {
+        padding-left: 1.5%;
+    }
+}
+
+@media (max-width: 500px) {
+
 }
