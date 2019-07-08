@@ -10,6 +10,7 @@
 
 .servicesHeaderImg{
     margin: 65px 0px 30px 0px;
+    width: 100%;
 }
 
 h2 {
@@ -70,3 +71,50 @@ footer p{
     font-size: 1.6rem;
 }
 
+@media (max-width: 800px) {
+    .servicesHeaderImg{
+        margin-top: 140px;
+    }
+    .midServices {
+        justify-content: center;
+    }
+
+    .textbox {
+        width: 80%;
+        /* display: none; */
+    }
+
+    .bottomServices {
+        justify-content: center;
+    }
+
+    .services-info-img {
+        display: none;
+    }
+
+    .bottomLeftServices {
+        width: 80%;
+    }
+
+    footer {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .servicesHeaderImg {
+        margin-top: 0px;
+        display: none;
+    }
+
+    .topServices {
+        margin-top: 20px;
+    }
+
+    .textbox {
+        width: 95%;
+    }
+    .bottomLeftServices {
+        width: 95%;
+    }
+}
